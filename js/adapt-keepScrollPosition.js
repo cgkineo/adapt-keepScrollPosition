@@ -31,14 +31,15 @@ define(function(require) {
 
 	$(window).on("scroll", function () {
 		if (!isPopupOpened) {
-			console.log(currentId + " updated to " + window.scrollY);
-			scrollPos[currentId] = window.scrollY;
+			console.log(currentId + " updated to " + (window.scrollY || window.pageYOffset));
+			scrollPos[currentId] = window.scrollY || window.pageYOffset;
 		}
 	})
 
 	function newScrollTop(pos) {
 		if (isPopupOpened && pos !== undefined && scrollPos[currentId] !== undefined) {
 			console.log(currentId + " returning to " + scrollPos[currentId]);
+			Adapt.trigger("keepScrollPosition:returnToPosition", currentId);
 			return newScrollTop.old.call(this, scrollPos[currentId]);
 		}
 		return newScrollTop.old.call(this, pos);
