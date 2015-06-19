@@ -42,7 +42,11 @@ define(function(require) {
 			Adapt.trigger("keepScrollPosition:returnToPosition", currentId);
 			return newScrollTop.old.call(this, scrollPos[currentId]);
 		}
-		return newScrollTop.old.call(this, pos);
+		if (pos === undefined) {
+			return newScrollTop.old.call(this);
+		} else {
+			return newScrollTop.old.call(this, pos);
+		}
 	}
 	newScrollTop.old = $.fn.scrollTop;
 
