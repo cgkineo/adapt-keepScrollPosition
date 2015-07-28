@@ -1,14 +1,16 @@
 {
-  "name": "adapt-keepScrollPosition",
-  "homepage": "https://github.com/cgkineo/adapt-keepScrollPosition",
-  "authors": [
-    "Oliver Foster <oliver.foster@kineo.com"
-  ],
-  "description": "%description",
-  "main": "/js/adapt-keepScrollPosition.js",
-  "keywords": [
-    "adapt-plugin",
-    "adapt-extension"
-  ],
-  "license": "GPLv3"
+	"name": "adapt-keepScrollPosition",
+	"version": "0.1.0",
+	"description": "An extension to restore scroll position when revisiting content objects.",
+	"main": "/js/adapt-keepScrollPosition.js",
+	"keywords": [
+		"adapt-plugin",
+		"adapt-extension"
+	],
+	"authors": [
+		"Oliver Foster <oliver.foster@kineo.com>",
+		"Tom Greenfield"
+	],
+	"license": "GPL-3.0",
+	"homepage": "https://github.com/cgkineo/adapt-keepScrollPosition"
 }
