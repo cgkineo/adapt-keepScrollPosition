@@ -1,50 +1,50 @@
 {
-	"type":"object",
-	"$schema": "http://json-schema.org/draft-04/schema",
-	"id": "http://jsonschema.net",
-	"required":false,
-	"properties":{
-		"pluginLocations": {
-			"type":"object",
-			"required":true,
-			"properties":{
-				"config": {
-					"type":"object"
-				},
-		        "course": {
-					"type":"object"
-				},
-		        "contentobject": {
-					"type":"object",
-					"properties":{
-						"_keepScrollPosition": {
-							"type": "object",
-							"required": false,
-							"title": "Keep scroll position",
-							"properties": {
-								"_isEnabled": {
-									"type": "boolean",
-									"required":true,
-									"default": true,
-									"title": "Is enabled",
-									"inputType": {"type": "Boolean", "options": [true, false]},
-									"validators": [],
-									"help": "If set to 'true', the scroll position will be restored when revisiting contentobjects"
-								}
-							}
-						}
-					}
-				},
-		        "article": {
-					"type":"object"
-				},
-		        "block": {
-					"type":"object"
-				},
-		        "component": {
-					"type":"object"
-				}
-			}
-		}
-	}
+    "type":"object",
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "id": "http://jsonschema.net",
+    "required":false,
+    "properties":{
+        "pluginLocations": {
+            "type":"object",
+            "required":true,
+            "properties":{
+                "config": {
+                    "type":"object"
+                },
+                "course": {
+                    "type":"object"
+                },
+                "contentobject": {
+                    "type":"object",
+                    "properties":{
+                        "_keepScrollPosition": {
+                            "type": "object",
+                            "required": false,
+                            "title": "Keep scroll position",
+                            "properties": {
+                                "_isEnabled": {
+                                    "type": "boolean",
+                                    "required":true,
+                                    "default": true,
+                                    "title": "Is enabled",
+                                    "inputType": {"type": "Boolean", "options": [true, false]},
+                                    "validators": [],
+                                    "help": "If set to 'true', the scroll position will be restored when revisiting contentobjects"
+                                }
+                            }
+                        }
+                    }
+                },
+                "article": {
+                    "type":"object"
+                },
+                "block": {
+                    "type":"object"
+                },
+                "component": {
+                    "type":"object"
+                }
+            }
+        }
+    }
 }
