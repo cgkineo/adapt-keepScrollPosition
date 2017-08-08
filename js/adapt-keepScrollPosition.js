@@ -21,6 +21,7 @@ define([ "coreJS/adapt" ], function(Adapt) {
 	}
 	
 	function shouldRestorePosition() {
+		if (!Adapt.location._currentId) return false;
 		try {
 			var model = Adapt.findById(Adapt.location._currentId);
 			var config = model.get("_keepScrollPosition");
