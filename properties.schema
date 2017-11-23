@@ -1,22 +1,19 @@
 {
-    "type":"object",
+    "type": "object",
     "$schema": "http://json-schema.org/draft-04/schema",
     "id": "http://jsonschema.net",
-    "required":false,
-    "properties":{
+    "required": false,
+    "properties": {
         "pluginLocations": {
-            "type":"object",
+            "type": "object",
             "required":true,
-            "properties":{
+            "properties": {
                 "config": {
-                    "type":"object"
+                    "type": "object"
                 },
                 "course": {
-                    "type":"object"
-                },
-                "contentobject": {
-                    "type":"object",
-                    "properties":{
+                    "type": "object",
+                    "properties": {
                         "_keepScrollPosition": {
                             "type": "object",
                             "required": false,
@@ -27,22 +24,43 @@
                                     "required":true,
                                     "default": true,
                                     "title": "Is enabled",
-                                    "inputType": {"type": "Boolean", "options": [true, false]},
+                                    "inputType": "Checkbox",
                                     "validators": [],
-                                    "help": "If set to 'true', the scroll position will be restored when revisiting contentobjects"
+                                    "help": "Determines whether the scroll position for the main menu will be remembered and restored when it is revisited."
+                                }
+                            }
+                        }
+                    }
+                },
+                "contentobject": {
+                    "type": "object",
+                    "properties": {
+                        "_keepScrollPosition": {
+                            "type": "object",
+                            "required": false,
+                            "title": "Keep scroll position",
+                            "properties": {
+                                "_isEnabled": {
+                                    "type": "boolean",
+                                    "required":true,
+                                    "default": true,
+                                    "title": "Is enabled",
+                                    "inputType": "Checkbox",
+                                    "validators": [],
+                                    "help": "Determines whether the scroll position for this page will be remembered and restored when it is revisited."
                                 }
                             }
                         }
                     }
                 },
                 "article": {
-                    "type":"object"
+                    "type": "object"
                 },
                 "block": {
-                    "type":"object"
+                    "type": "object"
                 },
                 "component": {
-                    "type":"object"
+                    "type": "object"
                 }
             }
         }

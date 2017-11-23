@@ -4,7 +4,7 @@
 * Maintainers - Oliver Foster <oliver.foster@kineo.com>, Tom Greenfield
 */
 
-define([ "coreJS/adapt" ], function(Adapt) {
+define([ "core/js/adapt" ], function(Adapt) {
 
 	var position = {};
 
