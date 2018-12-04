@@ -10,7 +10,7 @@
     "issues": "https://github.com/cgkineo/adapt-keepScrollPosition/issues/",
     "displayName": "Keep Scroll Position",
     "extension": "keepScrollPosition",
-    "description": "An extension that will remember and restore the learner's scroll position with a menu or page",
+    "description": "An extension that will remember and restore the learner's scroll position within a menu or page",
     "main": "/js/adapt-keepScrollPosition.js",
     "keywords": [
         "adapt-plugin",
