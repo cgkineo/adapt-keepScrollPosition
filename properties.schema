@@ -6,7 +6,7 @@
     "properties": {
         "pluginLocations": {
             "type": "object",
-            "required":true,
+            "required": true,
             "properties": {
                 "config": {
                     "type": "object"
@@ -21,12 +21,12 @@
                             "properties": {
                                 "_isEnabled": {
                                     "type": "boolean",
-                                    "required":true,
+                                    "required": true,
                                     "default": true,
-                                    "title": "Is enabled",
+                                    "title": "Enabled?",
                                     "inputType": "Checkbox",
                                     "validators": [],
-                                    "help": "Determines whether the scroll position for the main menu will be remembered and restored when it is revisited."
+                                    "help": "Whether the scroll position for the main menu will be remembered and restored when it is revisited."
                                 }
                             }
                         }
@@ -42,12 +42,12 @@
                             "properties": {
                                 "_isEnabled": {
                                     "type": "boolean",
-                                    "required":true,
+                                    "required": true,
                                     "default": true,
-                                    "title": "Is enabled",
+                                    "title": "Enabled?",
                                     "inputType": "Checkbox",
                                     "validators": [],
-                                    "help": "Determines whether the scroll position for this page will be remembered and restored when it is revisited."
+                                    "help": "Whether the scroll position for this page will be remembered and restored when it is revisited."
                                 }
                             }
                         }

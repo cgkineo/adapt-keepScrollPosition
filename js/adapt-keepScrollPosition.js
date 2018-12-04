@@ -4,7 +4,7 @@
 * Maintainers - Oliver Foster <oliver.foster@kineo.com>, Tom Greenfield
 */
 
-define([ "core/js/adapt" ], function(Adapt) {
+define([ 'core/js/adapt' ], function(Adapt) {
 
 	var position = {};
 
@@ -19,19 +19,19 @@ define([ "core/js/adapt" ], function(Adapt) {
 
 		if (savedPosition) $(window).scrollTop(savedPosition);
 	}
-	
+
 	function shouldRestorePosition() {
 		if (!Adapt.location._currentId) return false;
 		try {
 			var model = Adapt.findById(Adapt.location._currentId);
-			var config = model.get("_keepScrollPosition");
+			var config = model.get('_keepScrollPosition');
 			if (config && config._isEnabled === false) return false;
 		} catch(e) {}
 		return true;
 	}
 
 	Adapt
-		.on("menuView:ready pageView:ready", restorePosition)
-		.on("remove", savePosition);
+		.on('menuView:ready pageView:ready', restorePosition)
+		.on('remove', savePosition);
 
 });
