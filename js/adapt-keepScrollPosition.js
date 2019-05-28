@@ -1,9 +1,3 @@
-/*
-* adapt-keepScrollPosition
-* License - http://github.com/adaptlearning/adapt_framework/LICENSE
-* Maintainers - Oliver Foster <oliver.foster@kineo.com>, Tom Greenfield
-*/
-
 define([ 'core/js/adapt' ], function(Adapt) {
 
 	var position = {};
@@ -30,8 +24,9 @@ define([ 'core/js/adapt' ], function(Adapt) {
 		return true;
 	}
 
-	Adapt
-		.on('menuView:ready pageView:ready', restorePosition)
-		.on('remove', savePosition);
+	Adapt.on({
+		'menuView:ready pageView:ready': restorePosition,
+		'remove': savePosition
+	});
 
 });
