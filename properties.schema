@@ -17,7 +17,7 @@
                         "_keepScrollPosition": {
                             "type": "object",
                             "required": false,
-                            "title": "Keep scroll position",
+                            "legend": "Keep scroll position",
                             "properties": {
                                 "_isEnabled": {
                                     "type": "boolean",
@@ -38,7 +38,7 @@
                         "_keepScrollPosition": {
                             "type": "object",
                             "required": false,
-                            "title": "Keep scroll position",
+                            "legend": "Keep scroll position",
                             "properties": {
                                 "_isEnabled": {
                                     "type": "boolean",
