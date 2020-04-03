@@ -5,7 +5,7 @@ define([ 'core/js/adapt' ], function(Adapt) {
 	function savePosition() {
 		if (!isEnabled()) return;
 
-		position[Adapt.location._currentId] = window.scrollY || window.pageYOffset;
+		position[Adapt.location._currentId] = $(window).scrollTop();
 	}
 
 	function restorePosition() {
