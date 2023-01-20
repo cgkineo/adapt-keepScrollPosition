@@ -1,6 +1,6 @@
 define([ 'core/js/adapt' ], function(Adapt) {
 
-  var position = {};
+  const position = {};
 
   function savePosition() {
     if (!isEnabled()) return;
@@ -11,7 +11,7 @@ define([ 'core/js/adapt' ], function(Adapt) {
   function restorePosition() {
     if (!isEnabled()) return;
 
-    var savedPosition = position[Adapt.location._currentId];
+    const savedPosition = position[Adapt.location._currentId];
     if (!savedPosition) return;
 
     $(window).scrollTop(savedPosition);
@@ -20,14 +20,14 @@ define([ 'core/js/adapt' ], function(Adapt) {
   function isEnabled() {
     if (!Adapt.location._currentId) return false;
 
-    var model = Adapt.findById(Adapt.location._currentId);
-    var config = model.get('_keepScrollPosition');
+    const model = Adapt.findById(Adapt.location._currentId);
+    const config = model.get('_keepScrollPosition');
     return (config && config._isEnabled);
   }
 
   Adapt.on({
     'menuView:ready pageView:ready': restorePosition,
-    'remove': savePosition
+    remove: savePosition
   });
 
 });
