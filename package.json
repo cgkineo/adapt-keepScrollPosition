@@ -5,7 +5,7 @@
     "url": "git://github.com/cgkineo/adapt-keepScrollPosition"
   },
   "framework": ">=2",
-  "version": "1.0.0",
+  "version": "4.0.0",
   "homepage": "https://github.com/cgkineo/adapt-keepScrollPosition",
   "issues": "https://github.com/cgkineo/adapt-keepScrollPosition/issues/",
   "displayName": "Keep Scroll Position",
@@ -59,4 +59,4 @@
       ]
     ]
   }
-} 
+}
